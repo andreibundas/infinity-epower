@@ -1,0 +1,290 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #76877d;
+  background-color: #7e7f83;
+  background-color: #78797d;
+  /* background-image: linear-gradient(#070200, #110f0e, #7e7f83); */
+  background-color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.gridM {
+  margin: 40px;
+}
+h1,
+h2,
+h3 {
+  color: #408848;
+  /* letter-spacing: 2px; */
+  letter-spacing: -10%;
+}
+p {
+  color: #ffffff;
+  text-align: justify;
+  font-size: clamp(1em, 1.3em, 1.6em);
+  /* text-indent: 20px; */
+  /* letter-spacing: 0.5px; */
+  line-height: 1.4;
+}
+header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  /* grid-template-rows: 80px 120px 100px 200px 100px; */
+  grid-template-rows: 80px;
+
+  /* background-color: #333;
+  z-index: 10; */
+}
+
+/* Navbar section */
+header {
+  /* opacity: 0.8; */
+  align-items: center;
+  /* background-image: url(img/img1.jpg); */
+  background-color: #000000;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+header a {
+  grid-column: span 6;
+  padding: 10px;
+  color: #408848;
+}
+
+header img {
+  height: 40px;
+  align-self: center;
+}
+header nav {
+  grid-column: 7 / span 6;
+  justify-self: end;
+  padding: 10px 40px;
+  font-weight: bold;
+}
+header nav a:hover {
+  color: #408848;
+}
+
+header nav a {
+  color: #333;
+  margin-left: 10px;
+  text-decoration: none;
+}
+#blind1 {
+  grid-column: span 12;
+  grid-template-rows: 200px;
+}
+header h1 {
+  grid-column: 6 / span 5;
+  grid-row: auto;
+  font-size: clamp(1.5rem, 2.8rem, 3.5rem);
+}
+
+header #pictograma {
+  grid-column: 10 / span 3;
+  grid-row: auto;
+  width: 60%;
+  height: auto;
+}
+
+/* Hero section */
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 20px;
+  border-bottom: 2px solid #408848;
+}
+/* main .intro  {
+  background-color: #FFFFFF;
+} */
+main .intro p {
+  margin: 60px;
+  text-indent: 20px;
+  font-size: clamp(1em, 1.5em, 2em);
+}
+
+.intro p {
+  text-indent: 0px;
+}
+main > h2 {
+  grid-column: span 6;
+  /* text-align: center; */
+  font-size: 2.5em;
+  padding-top: 20px;
+  padding-left: 30px;
+  font-size: clamp(1.5rem, 2.5rem, 3rem);
+}
+main img {
+  grid-column: 3 / span 3;
+  width: 100%;
+  border-radius: 10%;
+}
+main .device {
+  grid-column: 7 / span 5;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .grid2 p {
+  text-indent: 20px;
+}
+
+.card1 {
+  grid-column: 4 / span 6;
+  padding: 10px 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-style: solid;
+  border-color: #408848;
+  border-width: 2px;
+  /* border-color: #408848; */
+  /* background-color: #7e7f83; */
+  border-radius: 5%;
+}
+.card1 h3 {
+  text-align: center;
+}
+.card1 p {
+  text-align: center;
+  line-height: 1.8;
+}
+
+main .prod2 {
+  margin: 40px 0px 0px 0px;
+}
+/* Footer  */
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* gap: 10px; */
+  grid-template-rows: 160px;
+  justify-content: center;
+  align-content: center;
+  background-color: black;
+}
+
+footer #foot1 {
+  grid-column: 2 / span 3;
+  padding-top: 10px;
+}
+
+footer #foot2 {
+  grid-column: 9 / span 3;
+  justify-self: end;
+  padding-top: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #408848;
+  letter-spacing: 0.5px;
+  line-height: 2;
+  font-size: clamp(0.6rem, 1.1rem, 1.5rem);
+}
+footer p {
+  grid-column: 3 / span 8;
+  justify-self: center;
+  color: #f4f5f4;
+  font-size: clamp(0.5rem, 0.8rem, 1rem);
+}
+/* ecran smart mare - Samsung  */
+@media screen and (max-width: 1200px) {
+  main img {
+    grid-column: 2 / span 4;
+  }
+}
+@media screen and (max-width: 960px) {
+  h1,
+  h2,
+  h3 {
+    letter-spacing: 1px;
+  }
+  .gridM {
+    margin: 0px;
+  }
+  header {
+    /* background-image: url(img/electric-field.jpg); */
+    background-color: #000000;
+  }
+  header #pictograma {
+    grid-column: 8 / span 4;
+    grid-row: auto;
+    width: 80%;
+    height: auto;
+  }
+  .intro {
+    margin: 40px;
+  }
+  main > h2 {
+    grid-column: 3 / span 9;
+    font-size: 2em;
+    padding-top: 5px;
+    padding-left: 50px;
+    /* font-size: clamp(1em, 1.6em, 2.5em); */
+  }
+  main img {
+    grid-column: 3 / span 8;
+  }
+
+  main .device {
+    grid-column: 1 / span 12;
+  }
+  .card1 {
+    grid-column: 3 / span 8;
+  }
+
+  footer #foot1 {
+    grid-column: 2 / span 5;
+    justify-self: start;
+  }
+
+  footer #foot2 {
+    grid-column: 7 / span 5;
+    justify-self: end;
+  }
+}
+@media screen and (max-width: 670px) {
+  h2 {
+    text-align: center;
+  }
+  .card1 {
+    grid-column: 2 / span 10;
+  }
+  footer #foot1 {
+    grid-column: span 6;
+    justify-self: start;
+    padding-left: 10px;
+  }
+
+  footer #foot2 {
+    grid-column: 7 / span 6;
+    justify-self: end;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+  main > h2 {
+    font-size: 1.6rem;
+  }
+
+  .intro {
+    margin: 20px;
+  }
+  footer p {
+    font-size: 0.9em;
+  }
+  footer a {
+    font-size: 0.9em;
+  }
+}
